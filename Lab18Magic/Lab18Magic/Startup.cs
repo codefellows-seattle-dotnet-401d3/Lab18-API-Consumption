@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Lab18Magic.Data;
 
 namespace Lab18Magic
 {
@@ -20,11 +21,12 @@ namespace Lab18Magic
 
         public IConfiguration Configuration { get; }
 
-        public void ConfigurationServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddDbContext<MagicDBContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("MagicDBContext")));
+
+            services.AddDbContext<DeckDBContext>(options =>
+                    options.UseInMemoryDatabase(Configuration.GetConnectionString("DeckDBContext")));
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

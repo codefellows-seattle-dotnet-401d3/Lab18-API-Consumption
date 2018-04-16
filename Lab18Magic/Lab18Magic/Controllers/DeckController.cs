@@ -65,7 +65,7 @@ namespace Lab18Magic.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([Bind("Name,Type")] Deck deck)
+        public async Task<IActionResult> Create([Bind("Name,Type,CompletedBuild")] Deck deck)
         {
             if (ModelState.IsValid)
             {

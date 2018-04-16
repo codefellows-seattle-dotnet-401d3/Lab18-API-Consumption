@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\" />
+    <Folder Include="Views\Card\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
