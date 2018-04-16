@@ -1,0 +1,20 @@
+﻿@model Lab18Magic.Models.Deck
+@{ }
+<h2>Create a New Deck</h2>
+<form asp-action="Create">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+
+    <label asp-for="Type"></label>
+    <input asp-for="Type" />
+    <span asp-validation-for="Type"></span>
+
+    <label asp-for="CompleteBuild"></label>
+    <input asp-for="CompleteBuild" />
+    <span asp-validation-for="CompleteBuild"></span>
+
+    <input type="submit" value="Create Deck"/>
+</form> 
+
+<a asp-action="Index">Return to Deck Home</a>

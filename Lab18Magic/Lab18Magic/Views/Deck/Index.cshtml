@@ -1,0 +1,32 @@
+﻿@model Lab18Magic.Models.DeckViewModel
+@{ }
+
+<h2>Deck Management</h2>
+<p><a asp-action="Create">Create a New Deck</a></p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.decks[0].Name)</th>
+            <th>@Html.DisplayNameFor(model => model.decks[0].Type)</th>
+            <th>@Html.DisplayNameFor(model => model.decks[0].CompleteBuild)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prop in Model.decks)
+        {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => prop.Name)</td>
+            <td>@Html.DisplayFor(modelItem => prop.Type)</td>
+            <td>@Html.DisplayFor(modelItem => prop.CompleteBuild)</td>
+            <td>
+                <a asp-action="Cards" asp-route-id="@prop.ID">View Deck Cards</a> |
+                <a asp-action="Details" asp-route-id="@prop.ID">Details</a> |
+                <a asp-action="Edit" asp-route-id="@prop.ID">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@prop.ID">Delete</a>
+            </td>
+        </tr>
+
+        }
+    </tbody>
+</table>
