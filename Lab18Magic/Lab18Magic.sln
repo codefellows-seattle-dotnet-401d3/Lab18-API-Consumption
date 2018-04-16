@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab18Magic", "Lab18Magic\Lab18Magic.csproj", "{ADD96828-DCF4-44DA-B5C2-ED2491851C41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADD96828-DCF4-44DA-B5C2-ED2491851C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD96828-DCF4-44DA-B5C2-ED2491851C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD96828-DCF4-44DA-B5C2-ED2491851C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD96828-DCF4-44DA-B5C2-ED2491851C41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00712C8F-C92C-41F1-AF3C-82E04BF7EDC6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+﻿@model Lab18Magic.Models.Deck
+@{ }
+<h2>Delete a Deck</h2>
+
+<h3>Are you sure you want to delete this deck?</h3>
+<h4>Deck to be Deleted</h4>
+<dl>
+    <dt>@Html.DisplayFor(deck => deck.Name)</dt>
+    <dt>@Html.DisplayFor(deck => deck.Type)</dt>
+    <dt>@Html.DisplayFor(deck => deck.CompleteBuild)</dt>
+</dl>
+<form asp-action="Delete">
+    <input type="hidden" asp-for="ID"/>
+    <input type="submit" value="Delete"/>
+    <a asp-action="Index">Back to Deck Home</a>
+</form>
