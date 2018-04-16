@@ -1,0 +1,13 @@
+﻿@model Lab18Magic.Models.Deck
+@{ }
+<h2>Deck Details</h2>
+
+<h3>Deck Details</h3>
+<dl>
+    <dt>@Html.DisplayFor(deck => deck.Name)</dt>
+    <dt>@Html.DisplayFor(deck => deck.Type)</dt>
+    <dt>@Html.DisplayFor(deck => deck.CompleteBuild)</dt>
+</dl>
+
+<a asp-action="Edit" asp-route-id="@Model.ID">Edit Deck</a> |
+<a asp-action="Index">Back to Deck Home</a>
